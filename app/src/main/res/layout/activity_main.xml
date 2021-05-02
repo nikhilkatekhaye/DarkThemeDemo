@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DAD3D3"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_container"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:background="@color/colorCardBackground"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="MyData"
+            android:textColor="@color/colorTitle60"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="765"
+            android:textColor="@color/colorNumber"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/img" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_below="@+id/linear_container"
+        android:id="@+id/btn_switch"
+        android:text="Switch"
+        android:textColor="@color/colorCardBackground"
+        android:background="@color/colorPrimary"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
